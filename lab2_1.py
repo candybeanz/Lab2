@@ -14,11 +14,13 @@ def condi(bmivalue):
     bm=bmivalue
     if (bm<18.5):
         print("Underweight..")
+        return -1
     elif(bm>=18.5 and bm<=25.0):
         print("Normal weight...")
+        return 0
     else:
         print("Overweight")
-    return 
-
+        return 1
+    return
 condi(bmivalue)
 
